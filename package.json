@@ -1,5 +1,17 @@
 {
-
+  "version": "1.0.0",
+  "private": true,
+  "description": "Get started with React with code splitting!",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "keywords": [
+    "neutrino",
+    "react",
+    "code-splitting",
+    "starter",
+    "webpack"
+  ],
   "neutrino": {
     "use": [
       "neutrino-preset-airbnb-base",
