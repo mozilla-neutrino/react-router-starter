@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "description": "Get started with React with code splitting!",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "keywords": [
+    "neutrino",
+    "react",
+    "router",
+    "starter",
+    "webpack"
+  ],
+  "neutrino": {
+    "use": [
+      "neutrino-preset-airbnb-base",
+      "neutrino-preset-react"
+    ],
+    "config": {
+      "entry": {
+        "vendor": [
+          "react",
+          "react-dom",
+          "react-hot-loader",
+          "react-router"
+        ]
+      }
+    }
+  },
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build"
+  },
+  "devDependencies": {
+    "neutrino": "^5.2.0",
+    "neutrino-preset-airbnb-base": "^5.2.0",
+    "neutrino-preset-react": "^5.2.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "3.0.0-beta.6",
+    "react-router-dom": "^4.0.0"
+  }
+}
