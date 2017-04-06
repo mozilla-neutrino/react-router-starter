@@ -104,14 +104,16 @@ This starter kit splits React, React DOM, React Hot Loader and React Router into
           "react",
           "react-dom",
           "react-hot-loader",
-          "react-router"
+          "react-router-dom"
         ]
       }
     }
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "3.0.0-beta.6",
+    "react-router-dom": "^4.0.0"
   }
 }
 ````
