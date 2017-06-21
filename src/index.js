@@ -7,7 +7,7 @@ import App from './App';
 const renderApp = () => {
   render(
     <AppContainer>
-      <App key={module.hot ? new Date() : undefined} />
+      <App key={Math.random()} />
     </AppContainer>,
     document.getElementById('root'),
   );

@@ -1,3 +1,14 @@
-import { asyncComponent } from 'react-async-component';
+import React from 'react';
+import Loadable from 'react-loadable';
+import Loading from '../Loading';
 
-export default asyncComponent({ resolve: () => System.import('./Bar') });
+const LoadableComponent = Loadable({
+  loader: () => import('./Bar'),
+  loading: Loading
+});
+
+export default class Foo extends React.Component {
+  render() {
+    return <LoadableComponent/>;
+  }
+}
