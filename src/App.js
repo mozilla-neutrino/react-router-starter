@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import asyncComponent from './components/asyncComponent';
 import './App.css';
 
-const Foo = asyncComponent(() => System.import('./components/Foo').then(module => module.default));
-const Bar = asyncComponent(() => System.import('./components/Bar').then(module => module.default));
-const Home = asyncComponent(() => System.import('./components/Home').then(module => module.default));
+import AsyncFoo from './components/Foo';
+import AsyncBar from './components/Bar';
+import AsyncHome from './components/Home';
 
 const App = () => (
   <Router>
@@ -16,9 +15,9 @@ const App = () => (
         <li><Link to="/bar">Bar</Link></li>
       </ul>
 
-      <Route exact path="/" component={Home} />
-      <Route path="/foo" component={Foo} />
-      <Route path="/bar" component={Bar} />
+      <Route exact path="/" component={AsyncHome} />
+      <Route path="/foo" component={AsyncFoo} />
+      <Route path="/bar" component={AsyncBar} />
     </div>
   </Router>
 );

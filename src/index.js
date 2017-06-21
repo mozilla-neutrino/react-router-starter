@@ -4,10 +4,10 @@ import { AppContainer } from 'react-hot-loader';
 
 import App from './App';
 
-const renderApp = (Component = App) => {
+const renderApp = () => {
   render(
     <AppContainer>
-      <Component key={module.hot ? new Date() : undefined} />
+      <App key={module.hot ? new Date() : undefined} />
     </AppContainer>,
     document.getElementById('root'),
   );
