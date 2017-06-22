@@ -6,6 +6,7 @@ module.exports = {
         .add('react')
         .add('react-dom')
         .add('react-hot-loader')
-        .add('react-router-dom')        
+        .add('react-router-dom')
+        .add('react-async-component')
   ]
 };
