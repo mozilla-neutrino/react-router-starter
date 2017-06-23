@@ -1,4 +1,17 @@
 {
+  "version": "1.0.0",
+  "private": true,
+  "description": "Get started with React with code splitting!",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "keywords": [
+    "neutrino",
+    "react",
+    "router",
+    "starter",
+    "webpack"
+  ],
   "scripts": {
     "start": "neutrino start",
     "build": "neutrino build"
